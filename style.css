@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#Principal{
+    width: 100%;
+    height: 80px;
+    border: 1px solid black;
+    background-color: #303030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #BABABA;
+   }
+
+   #Principal div a{
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+   }
+   
+        #Principal div a:hover{
+            color: #CCCCCC; 
+        }
+
+   #Menu{
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+    margin: 5%;
+   }
+
+   #Principal button{
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+
+    margin-right: 5%;
+    background-color: #0C70F2;
+    border: 0;
+
+    width: 80px;
+    height: 40px;
+   
+    box-shadow: 3px 2px 4px rgba(11, 112, 244, 0.5);
+    cursor: pointer;
+   }
