@@ -30,9 +30,43 @@
         </header>
         <form>
             <div class="Form-group">
-                <label>Nome:</label><br>
-                <input type="text" placeholder="Insira seu nome aqui">
+                <label>Nome:</label>
+                <input type="text" placeholder="Insira seu nome aqui" required>
             </div>
+            
+            <div class="Form-group">
+                <label>Sobrenome:</label>
+                <input type="text" placeholder="Insira seu sobrenome aqui" required>
+            </div>
+
+            <div class="Form-group">
+                <label>Area de interesse:</label>
+                <div class="Checkbox-Itens">
+                    <input type="checkbox" value="Front">
+                    <label>Front-End</label>
+                    <input type="checkbox" value="Back">
+                    <label>Back-End</label>
+                    <input type="checkbox" value="Banco">
+                    <label>Banco de Dados</label>
+                </div>
+            </div>
+
+            <div class="Form-group">
+                <label>E-mail:</label>
+                <input type="email" placeholder="Insira seu e-mail aqui" required>
+            </div>
+
+            <div class="Form-group">
+                <label>Telefone:</label>
+                <input type="text" placeholder="(99) 99999-9999" required>
+            </div>
+
+            <div class="Form-group">
+                <label>insira uma frase criativa aqui:</label>
+                <input type="text" placeholder="Qual frase criativa você gostaria de falar? :)" required>
+            </div>
+
+            <input type="submit" value="Cadastrar">
         </form>
     </section>
     

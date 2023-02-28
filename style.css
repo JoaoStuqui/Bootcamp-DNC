@@ -1,3 +1,13 @@
+:root{
+    --azul-dnc: #0C70F2;
+    --preto-dnc: #303030;
+    --cinza-hover: #C9C9C9;
+
+    --fonte-padrao: 'Inter';
+}
+
+
+
 body{
     margin: 0;
     padding: 0;
@@ -9,7 +19,7 @@ body{
     width: 100%;
     height: 80px;
     border: 1px solid black;
-    background-color: #303030;
+    background-color: var(--preto-dnc);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +27,7 @@ body{
    }
 
    #Principal div a{
-    font-family: 'Inter';
+    font-family: var(--fonte-padrao);
     font-size: 25px;
     font-weight: 600;
     color: #FFFFFF;
@@ -36,13 +46,13 @@ body{
    }
 
    #Principal button{
-    font-family: 'Inter';
+    font-family: var(--fonte-padrao);
     font-size: 20px;
     font-weight: 500;
     color: #FFFFFF;
 
     margin-right: 5%;
-    background-color: #0C70F2;
+    background-color: var(--azul-dnc);
     border: 0;
 
     width: 80px;
@@ -51,3 +61,94 @@ body{
     box-shadow: 3px 2px 4px rgba(11, 112, 244, 0.5);
     cursor: pointer;
    }
+
+   section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   }
+
+        header{
+            color: white;
+            font-family: var(--fonte-padrao);
+        }
+
+        header h1{
+            font-size: 80px;
+            font-weight: 750;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        header h2{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 100px;
+        }
+
+        .Colorir-Fudo {
+            
+            background-color: black;
+            font-weight: bold;
+            padding: 5px;
+        }
+    
+    form{
+        color: white;
+        font-family: var(--fonte-padrao);
+        font-size: 30px;
+        font-weight: 600;
+        width: 600px;
+    }
+    
+    .Form-group{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        margin-top: 10px;      
+    }
+
+    form input{
+        border-radius: 10px;
+        height: 30px;
+        border: 0px;
+        font-size: 20px;
+        padding: 10px;    
+        background-color: rgba(255, 255, 255, 0.9);    
+    }
+
+    form label{
+        margin: 10px 0px 10px 0px;
+    }
+
+    form input::placeholder{
+        color: rgba(57, 57, 57, 0.5);
+    }
+
+    .Checkbox-Itens label{
+        font-size: 25px
+    }
+
+    .Checkbox-Itens{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    input[type="checkbox"]{
+        transform: scale(2);
+    }
+
+    input[type="submit"]{
+        background-color: rgba(12, 112, 242, 0.9);
+        width: 100%;
+        height: 56px;
+        font-size: 32px;
+        color: white;
+        margin: 50px 0px 0px 0px;
+        box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+        cursor: pointer;
+    }
